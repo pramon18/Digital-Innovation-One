@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pablo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-04-18 10:37:49 "/>
+        <attribute name="created" value="cGFibG87REVTS1RPUC1OR1FITk1JOzIwMjEtMDQtMTg7IjEwOjI2OjA4ICI7MjgyOQ=="/>
+        <attribute name="edited" value="cGFibG87REVTS1RPUC1OR1FITk1JOzIwMjEtMDQtMTg7IjEwOjM3OjQ5ICI7MjsyOTQ1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Numero, Limite, Tabuada" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite o n&#250;mero da tabuada desejada : &quot;" newline="True"/>
+            <input variable="Tabuada"/>
+            <assign variable="Numero" expression="0"/>
+            <assign variable="Limite" expression="10"/>
+            <while expression="Numero &lt; Limite">
+                <output expression="&quot;Tabuada: &quot; &amp; Tabuada &amp; &quot; X &quot; &amp; Numero &amp; &quot; = &quot; &amp; Tabuada*Numero" newline="True"/>
+                <assign variable="Numero" expression="Numero + 1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

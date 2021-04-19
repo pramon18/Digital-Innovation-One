@@ -4,28 +4,35 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="pablo"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2021-04-16 10:04:32 "/>
+        <attribute name="saved" value="2021-04-18 10:17:56 "/>
         <attribute name="created" value="cGFibG87REVTS1RPUC1OR1FITk1JOzIwMjEtMDQtMTY7IjA2OjIyOjE4ICI7MjgyOQ=="/>
-        <attribute name="edited" value="cGFibG87REVTS1RPUC1OR1FITk1JOzIwMjEtMDQtMTY7IjEwOjA0OjMyICI7NDsyOTMx"/>
+        <attribute name="edited" value="cGFibG87REVTS1RPUC1OR1FITk1JOzIwMjEtMDQtMTg7IjEwOjE3OjU2ICI7NjsyOTQ1"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
             <declare name="Nota1, Nota2, Nota3, Nota4, Media, Total" type="Real" array="False" size=""/>
+            <declare name="Nome" type="String" array="False" size=""/>
+            <output expression="&quot;Digite o seu nome: &quot;" newline="True"/>
+            <input variable="Nome"/>
+            <output expression="&quot;Digite a Nota 1: &quot;" newline="True"/>
             <input variable="Nota1"/>
+            <output expression="&quot;Digite a Nota 2&quot;" newline="True"/>
             <input variable="Nota2"/>
+            <output expression="&quot;Digite a Nota 3&quot;" newline="True"/>
             <input variable="Nota3"/>
+            <output expression="&quot;Digite a Nota 4&quot;" newline="True"/>
             <input variable="Nota4"/>
             <assign variable="Media" expression="(Nota1 + Nota2 + Nota3 + Nota4) / 4"/>
             <assign variable="Total" expression="(Nota1 + Nota2 + Nota3 + Nota4)"/>
-            <output expression="Total" newline="True"/>
-            <output expression="Media" newline="True"/>
+            <output expression="&quot;O total das suas notas foi: &quot; &amp; Total" newline="True"/>
+            <output expression="&quot;A m&#233;dia do aluno &quot; &amp; Nome &amp; &quot; foi &quot; &amp; Media" newline="True"/>
             <if expression="media &gt;= 7">
                 <then>
-                    <output expression="&quot;Passou miser&#225;vel&quot;" newline="True"/>
+                    <output expression="&quot;O aluno &quot; &amp; Nome &amp; &quot; foi aprovado.&quot;" newline="True"/>
                 </then>
                 <else>
-                    <output expression="&quot;Passase n&#227;o desgramado&quot;" newline="True"/>
+                    <output expression="&quot;O aluno &quot; &amp; Nome &amp; &quot; infelizmente n&#227;o foi aprovado.&quot;" newline="True"/>
                 </else>
             </if>
         </body>

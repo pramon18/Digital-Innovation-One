@@ -1,3 +1,4 @@
+// Programa cálculo de médias de um aluno
 programa
 {
 	
@@ -6,9 +7,11 @@ programa
 		real nota1, nota2, nota3, nota4, media
 		cadeia aluno
 
+		// Receber nome do aluno
 		escreva("Digite o nome do aluno: \n")
 		leia(aluno)
 
+		// Receber notas
 		escreva("Digite a nota1: \n")
 		leia(nota1)
 		
@@ -21,10 +24,12 @@ programa
 		escreva("Digite a nota4: \n")
 		leia(nota4)
 
+		// Cálcular média
 		media = (nota1 + nota2 + nota3 + nota4) / 4
 		
 		escreva("A media do aluno " + aluno + " é: " + media + "\n")
 
+		// Verificar aprovação
 		se (media < 7.0)
 			escreva("O aluno " + aluno + " foi reprovado.\n")
 		senao
@@ -36,7 +41,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 586; 
+ * @POSICAO-CURSOR = 584; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

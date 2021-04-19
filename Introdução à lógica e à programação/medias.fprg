@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pablo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-04-16 10:04:32 "/>
+        <attribute name="created" value="cGFibG87REVTS1RPUC1OR1FITk1JOzIwMjEtMDQtMTY7IjA2OjIyOjE4ICI7MjgyOQ=="/>
+        <attribute name="edited" value="cGFibG87REVTS1RPUC1OR1FITk1JOzIwMjEtMDQtMTY7IjEwOjA0OjMyICI7NDsyOTMx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Nota1, Nota2, Nota3, Nota4, Media, Total" type="Real" array="False" size=""/>
+            <input variable="Nota1"/>
+            <input variable="Nota2"/>
+            <input variable="Nota3"/>
+            <input variable="Nota4"/>
+            <assign variable="Media" expression="(Nota1 + Nota2 + Nota3 + Nota4) / 4"/>
+            <assign variable="Total" expression="(Nota1 + Nota2 + Nota3 + Nota4)"/>
+            <output expression="Total" newline="True"/>
+            <output expression="Media" newline="True"/>
+            <if expression="media &gt;= 7">
+                <then>
+                    <output expression="&quot;Passou miser&#225;vel&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Passase n&#227;o desgramado&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -10,7 +10,7 @@ public class Carro {
     // Construtores
     public Carro(){
         quantidadePessoas = 1;
-        pessoas = null;
+        pessoas = new ArrayList<Pessoa>(1);
     }
 
     public Carro(Integer quantidadePessoas){
@@ -37,6 +37,10 @@ public class Carro {
     }
 
     public String listarPessoasNoCarro(){
-        return pessoas.toString();
+        String retorno = "";
+        for(Pessoa pessoa:pessoas){
+            retorno += String.format("%s\n", pessoa.getNome());
+        }
+        return retorno;
     }
 }

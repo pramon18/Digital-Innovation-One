@@ -6,6 +6,10 @@ public class Carro {
     // Atributos
     private Integer quantidadePessoas;
     private ArrayList<Pessoa> pessoas;
+    private String marca;
+    private String modelo;
+    private Integer ano;
+    private String variante;
 
     // Construtores
     public Carro(){
@@ -13,9 +17,12 @@ public class Carro {
         pessoas = new ArrayList<Pessoa>(1);
     }
 
-    public Carro(Integer quantidadePessoas){
+    public Carro(Integer quantidadePessoas, String modelo, String marca, Integer ano){
         this.quantidadePessoas = quantidadePessoas;
         this.pessoas = new ArrayList<Pessoa>(quantidadePessoas);
+        this.modelo = modelo;
+        this.marca = marca;
+        this.ano = ano;
     }
 
     public Carro(Integer quantidadePessoas, ArrayList<Pessoa> pessoas){
